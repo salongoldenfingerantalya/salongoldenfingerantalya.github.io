@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         }
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            /* Arka planda tam senin istediğin salon/kuaför fluluğu */
+            /* Beğendiğin görseldeki o harika saç kesim arka planı */
             background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=1200&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -26,42 +26,39 @@
         }
         .container {
             width: 100%;
-            max-width: 460px;
+            max-width: 440px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.45);
-            padding: 30px 20px;
-            border-radius: 20px;
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 10px;
         }
+        /* Üst sıra yerleşimi (Tırnak - Ana Logo - Saç) */
         .header-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            gap: 10px;
         }
-        .side-profile {
-            width: 85px;
-            height: 85px;
+        .side-circle {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             background-size: cover;
             background-position: center;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         }
-        /* Sol yuvarlak küçük resim: Saç yapımı */
-        .sac-img {
-            background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400&auto=format&fit=crop');
-        }
-        /* Sağ yuvarlak küçük resim: Tırnak tasarımı */
-        .tirnak-img {
+        /* Sol üstteki protez tırnak görseli */
+        .nail-img {
             background-image: url('https://images.unsplash.com/photo-1604654894610-df4906947712?q=80&w=400&auto=format&fit=crop');
         }
-        /* Ortadaki Ana Logo (Senin yüklediğin kelebekli logo) */
+        /* Sağ üstteki saç kesim görseli */
+        .hair-img {
+            background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400&auto=format&fit=crop');
+        }
+        /* ORTAKİ ANA LOGO: Tam senin dediğin gibi yüz ve kelebek olan fotoğraf yerleştirildi */
         .center-logo {
-            width: 100px;
-            height: 100px;
+            width: 95px;
+            height: 95px;
             border-radius: 50%;
             background-image: url('https://i.hizliresim.com/g0feh70.jpg');
             background-size: cover;
@@ -69,53 +66,45 @@
             border: 2px solid #d4af37;
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
         }
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 12px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-        }
+        /* Küçük ve çok az daha belirgin yazılmış kullanıcı adı */
         .username {
-            font-size: 14px;
-            color: #dcdcdc;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
             margin-bottom: 30px;
-            font-weight: 500;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
         }
         .links-wrapper {
             display: flex;
             flex-direction: column;
             gap: 14px;
         }
-        /* İlk baştaki o beyaz zeminli, renkli ikonlu şık butonlar */
+        /* İstediğin o ince altın çerçeveli şık buton yapısı */
         .btn {
             display: flex;
             align-items: center;
+            justify-content: center;
             width: 100%;
-            background: rgba(245, 245, 245, 0.95);
-            color: #000000;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
             text-decoration: none;
             padding: 14px 20px;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 16px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: transform 0.2s, background 0.2s;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            border: 1px solid #d4af37;
+            transition: all 0.2s ease;
         }
         .btn:active {
-            transform: scale(0.97);
-            background: #ffffff;
+            transform: scale(0.98);
+            background: rgba(212, 175, 55, 0.15);
         }
-        .btn img {
-            width: 26px;
-            height: 26px;
-            margin-right: 15px;
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
             object-fit: contain;
-        }
-        .btn span {
-            flex-grow: 1;
-            text-align: center;
-            margin-right: 26px;
         }
     </style>
 </head>
@@ -123,38 +112,33 @@
 
 <div class="container">
     <div class="header-row">
-        <div class="side-profile sac-img"></div>
+        <div class="side-circle nail-img"></div>
         <div class="center-logo"></div>
-        <div class="side-profile tirnak-img"></div>
+        <div class="side-circle hair-img"></div>
     </div>
     
-    <div class="title">Salon Golden Fingers</div>
     <div class="username">@salongoldenfingerantalya</div>
 
     <div class="links-wrapper">
         <a href="https://wa.me/905331350742" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Whatsapp">
-            <span>My Whatsapp</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" class="btn-icon" alt="WhatsApp">
+            WhatsApp
         </a>
-
         <a href="https://instagram.com/salongoldenfingerantalya" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-            <span>My Instagram</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="btn-icon" alt="Instagram">
+            Instagram
         </a>
-
         <a href="https://www.facebook.com/people/Salon-Golden-Fingers/61553316961194/" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-            <span>My Facebook</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="btn-icon" alt="Facebook">
+            Facebook
         </a>
-
         <a href="tel:+905331350742" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone">
-            <span>My Number</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="btn-icon" alt="Phone">
+            Call Us
         </a>
-
         <a href="https://maps.google.com/?q=Salon+Golden+Fingers+Antalya" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Location">
-            <span>Location</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="btn-icon" alt="Location">
+            Location / Address
         </a>
     </div>
 </div>
