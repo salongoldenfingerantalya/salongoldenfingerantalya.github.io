@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon Golden Fingers Antalya</title>
+    <title>Salon Golden Fingers</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,10 +12,7 @@
         }
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-color: #0d0d0d;
             color: #ffffff;
             display: flex;
             justify-content: center;
@@ -25,126 +22,81 @@
         }
         .container {
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 30px 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(3px);
+            padding: 20px;
         }
-        .header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 25px;
+        .logo-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px auto;
         }
-        .side-profile {
-            width: 80px;
-            height: 80px;
+        .logo-bg {
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
-            border: 2px solid #ffffff;
-            background-size: cover;
-            background-position: center;
-        }
-        /* Sol tarafa saç görseli */
-        .sac-img {
-            background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400&auto=format&fit=crop');
-        }
-        /* Sağ tarafa tırnak görseli */
-        .tirnak-img {
-            background-image: url('https://images.unsplash.com/photo-1604654894610-df4906947712?q=80&w=400&auto=format&fit=crop');
-        }
-        .center-logo {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            background-color: #000000;
-            border: 2px solid #d4af37;
+            background-color: #1a1a1a;
+            border: 3px solid #d4af37;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
+            font-size: 40px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
         }
         .username {
-            color: #ffffff;
-            font-size: 15px;
-            margin-top: -10px;
-            margin-bottom: 25px;
-            font-weight: 500;
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-bottom: 35px;
             letter-spacing: 0.5px;
         }
         .links-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 16px;
         }
         .btn {
-            display: flex;
-            align-items: center;
+            display: block;
             width: 100%;
-            background: #f8f9fa;
-            color: #000000;
+            background-color: #1e1e1e;
+            color: #ffffff;
             text-decoration: none;
-            padding: 14px 18px;
-            border-radius: 8px;
-            font-weight: 600;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-weight: 500;
             font-size: 16px;
-            transition: transform 0.2s, background 0.2s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #2a2a2a;
+            transition: all 0.2s ease;
         }
         .btn:active {
             transform: scale(0.98);
-            background: #e2e6ea;
-        }
-        .btn img {
-            width: 28px;
-            height: 28px;
-            margin-right: 15px;
-            object-fit: contain;
-        }
-        .btn span {
-            flex-grow: 1;
-            text-align: center;
-            margin-right: 28px; /* İkonu ortalamak için dengeleme */
+            background-color: #252525;
+            border-color: #d4af37;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="header-row">
-        <div class="side-profile sac-img"></div>
-        <div class="center-logo">👑</div>
-        <div class="side-profile tirnak-img"></div>
+    <div class="logo-container">
+        <div class="logo-bg">👑</div>
     </div>
     
+    <div class="title">Salon Golden Fingers</div>
     <div class="username">@salongoldenfingerantalya</div>
 
     <div class="links-wrapper">
-        <a href="https://wa.me/905331350742" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Whatsapp">
-            <span>My Whatsapp</span>
-        </a>
-
-        <a href="https://instagram.com/salongoldenfingerantalya" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-            <span>My Instagram</span>
-        </a>
-
-        <a href="https://www.facebook.com/people/Salon-Golden-Fingers/61553316961194/" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-            <span>My Facebook</span>
-        </a>
-
-        <a href="tel:+905331350742" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone">
-            <span>My Number</span>
-        </a>
-
-        <a href="https://maps.google.com/?q=Çağlayan+mah.Barınaklar+blv.+Çiftçi+Apt.No+121/A+Muratpaşa+/+Antalya" target="_blank" class="btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Location">
-            <span>Location</span>
-        </a>
+        <a href="https://wa.me/905331350742" target="_blank" class="btn">WhatsApp</a>
+        <a href="https://instagram.com/salongoldenfingerantalya" target="_blank" class="btn">Instagram</a>
+        <a href="https://www.facebook.com/people/Salon-Golden-Fingers/61553316961194/" target="_blank" class="btn">Facebook</a>
+        <a href="tel:+905331350742" class="btn">Telefon Et</a>
+        <a href="https://maps.google.com/?q=Salon+Golden+Fingers+Antalya" target="_blank" class="btn">Konum / Adres</a>
     </div>
 </div>
 
