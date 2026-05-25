@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon Golden Fingers</title>
+    <title>Golden Finger's Salon</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,8 +12,8 @@
         }
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            /* İstediğin o harika saç kesim arka planı */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=1200&auto=format&fit=crop');
+            /* Onay verdiğin o şık, altın işlemeli protez tırnak arka planı */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1604654894610-df4906947712?q=80&w=1200&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -26,83 +26,93 @@
         }
         .container {
             width: 100%;
-            max-width: 440px;
+            max-width: 450px;
             text-align: center;
             padding: 10px;
         }
-        /* Üst sıra yerleşimi (Tırnak - Kelebekli Yeni Logo - Saç) */
+        /* Üst Başlık Yazısı */
+        .main-title {
+            font-size: 26px;
+            font-weight: 500;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        /* Yuvarlakların yan yana simetrik dizildiği satır */
         .header-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
-            gap: 10px;
+            margin-bottom: 25px;
+            position: relative;
         }
+        /* Yanlardaki Yuvarlak Görseller */
         .side-circle {
-            width: 90px;
-            height: 90px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             background-size: cover;
             background-position: center;
-            border: 2px solid #d4af37;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border: 2.5px solid #b89742;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
-        /* Sol üstteki protez tırnak görseli */
-        .nail-img {
-            background-image: url('https://images.unsplash.com/photo-1604654894610-df4906947712?q=80&w=400&auto=format&fit=crop');
+        /* Sol üstteki kısa saç kesim modeli */
+        .left-hair {
+            background-image: url('https://images.unsplash.com/photo-1605497746444-ac9da4501a61?q=80&w=400&auto=format&fit=crop');
         }
-        /* Sağ üstteki saç kesim görseli */
-        .hair-img {
-            background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=400&auto=format&fit=crop');
+        /* Sağ üstteki makaslı saç kesim görseli */
+        .right-hair {
+            background-image: url('https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?q=80&w=400&auto=format&fit=crop');
         }
-        /* ORTAKİ ANA LOGO: Tam senin istediğin o yüz ve kelebek olan fotoğraf yerleştirildi */
+        /* Ortadaki küçük kelebekli ana logonuz */
         .center-logo {
-            width: 95px;
-            height: 95px;
+            width: 75px;
+            height: 75px;
             border-radius: 50%;
             background-image: url('https://i.hizliresim.com/g0feh70.jpg');
             background-size: cover;
             background-position: center;
-            border: 2px solid #d4af37;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            border: 2px solid #b89742;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
         }
-        /* Belirgin ve net kullanıcı adı */
+        /* Kullanıcı adı yazısı */
         .username {
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 500;
             color: #ffffff;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+            margin-bottom: 25px;
+            letter-spacing: 0.3px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
         }
         .links-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 12px;
         }
-        /* İstediğin o ince altın çerçeveli şık buton yapısı */
+        /* Koyu ve ince altın çerçeveli butonlar */
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(18, 18, 18, 0.75);
             color: #ffffff;
             text-decoration: none;
-            padding: 14px 20px;
+            padding: 13px 20px;
             border-radius: 12px;
             font-weight: 500;
             font-size: 15px;
-            border: 1px solid #d4af37;
+            border: 1px solid #b89742;
             transition: all 0.2s ease;
         }
         .btn:active {
             transform: scale(0.98);
-            background: rgba(212, 175, 55, 0.15);
+            background: rgba(18, 18, 18, 0.9);
         }
         .btn-icon {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             margin-right: 10px;
             object-fit: contain;
         }
@@ -111,10 +121,12 @@
 <body>
 
 <div class="container">
+    <h1 class="main-title">GOLDEN FINGER'S<br>SALON</h1>
+
     <div class="header-row">
-        <div class="side-circle nail-img"></div>
+        <div class="side-circle left-hair"></div>
         <div class="center-logo"></div>
-        <div class="side-circle hair-img"></div>
+        <div class="side-circle right-hair"></div>
     </div>
     
     <div class="username">@salongoldenfingerantalya</div>
@@ -134,11 +146,11 @@
         </a>
         <a href="tel:+905331350742" class="btn">
             <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" class="btn-icon" alt="Phone">
-            Telefon Et
+            Call Us
         </a>
-        <a href="https://maps.google.com/?q=Salon+Golden+Fingers+Antalya" target="_blank" class="btn">
+        <a href="https://maps.google.com" target="_blank" class="btn">
             <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="btn-icon" alt="Location">
-            Konum / Adres
+            Location / Address
         </a>
     </div>
 </div>
